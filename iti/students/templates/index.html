@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All students</title>
+</head>
+<body>
+<h1> Students </h1>
+<h2> we jinja2 template engine </h2>
+{{students}} --> contains list of objects
+<table border="3px">
+    <tr> <th> Id</th> <th> Name </th> <th> Grade</th></tr>
+    {% for std in students %}
+
+        <tr>
+            <td> {{std.id}}</td>
+            <td> {{std.name}}</td>
+            <td> {{std.grade}}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
